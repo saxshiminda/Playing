@@ -1,0 +1,79 @@
+.Dialog {
+    position: fixed;
+    top: 25vh;
+    left: 35%;
+    z-index: 100;
+    width: 30%;
+    height: 45vh;
+    color: black;
+    background-color: rgb(179, 179, 179);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* blar background */
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.imgBx{
+    width: 100%;
+    height: 300px;
+}
+
+.imgBx img{
+    cursor: pointer;
+    width: 100%;
+    height: 300px;
+}
+
+.DialogButton{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.DialogButton button{
+    width: 40%;
+    height: 100%;
+    background-color: rgba(145, 25, 25, 0.698);
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.CloseIcon{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 10%;
+    height: 10%;
+    cursor: pointer;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.contentBx{
+    position: absolute;
+    top: 70%;
+    left:50px;
+    right: 50px;
+    background: white;
+    opacity: 0.9;
+    transform:translateZ(20px) scaleY(0);
+    padding: 40px 25px;
+    transform-origin: top;
+    transition:0.5s;
+    transform-style: preserve-3d;
+}
+
+.box:hover .contentBx{
+    transform:translateZ(20px) scaleY(1);
+}

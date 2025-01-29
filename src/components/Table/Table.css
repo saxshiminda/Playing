@@ -1,0 +1,23 @@
+.backgroundBlur{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    backdrop-filter: blur(8px); /* Adjust the blur strength as needed */
+}
+
+.singleRow {
+    cursor: pointer;
+}
+
+.rowImage {
+    width: 100px;
+}
+
+.rowImage img{
+    width: 90px;
+    height: 90px;
+}
